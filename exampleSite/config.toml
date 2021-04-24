@@ -1,0 +1,25 @@
+theme = "showfolio"
+languageCode = "en-us"
+baseurl = "http://example.com/"
+title = "Showfolio Theme"
+
+author = "Varun A P"
+copyright = "Copyright © 2021 - Varun A P · All rights reserved"
+
+[params]
+    name = "Showfolio Theme"
+    description = "Modern portfolio theme for your Hugo site."
+
+    github_user = "apvarun"
+    github_repo = "https://github.com/apvarun/showfolio"
+    github_banner = true
+
+    favicon = "favicon.ico"
+
+[build]
+  writeStats = true
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
