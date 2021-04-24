@@ -1,0 +1,37 @@
+<section class="my-4 max-w-5xl mx-auto">
+  <div class="text-3xl font-bold mb-8">Resume</div>
+
+  <div class="grid grid-cols-2 gap-4">
+    <!-- Work Experience -->
+    <div>
+      <div class="text-2xl font-semibold mb-4">Working Experience</div>
+      {{ range .Site.Params.homepage.resume.work}}
+      <div>
+        <div class="text-xl font-bold my-2">{{.name}}</div>
+        <p class="my-1 font-light">{{.role}}</p>
+        <p class="text-gray-500 my-1">{{.duration}}</p>
+      </div>
+      {{ end }}
+    </div>
+
+    <!-- Skills -->
+    <div>
+      <div class="text-2xl font-semibold mb-4">Skills</div>
+      {{ range .Site.Params.homepage.resume.skills}}
+      <div class="text-xl font-light my-2">{{.}}</div>
+      {{end}}
+    </div>
+
+    <!-- Courses -->
+    <div>
+      <div class="text-2xl font-semibold mb-4">Courses</div>
+      {{ range .Site.Params.homepage.resume.courses}}
+      <div>
+        <div class="text-xl font-bold my-2">{{.name}}</div>
+        <p class="my-1 font-light">by {{.provider}}</p>
+        <p class="text-gray-500 my-1">{{.duration}}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

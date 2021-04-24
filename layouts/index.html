@@ -1,6 +1,7 @@
 {{ define "main" }}
-<article class="text-center">
-  <h1 class="font-serif font-extralight text-5xl">{{ .Title }}</h1>
-  {{ .Content }}
-</article>
+  {{- partial "hero.html" . -}}
+  {{- partial "codepen-gallery.html" . -}}
+  {{- partial "resume.html" . -}}
+  {{- partial "contact-cta.html" . -}}
+  {{- partial "social.html" . -}}
 {{ end }}

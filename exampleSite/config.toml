@@ -3,18 +3,54 @@ languageCode = "en-us"
 baseurl = "http://example.com/"
 title = "Showfolio Theme"
 
-author = "Varun A P"
-copyright = "Copyright © 2021 - Varun A P · All rights reserved"
 
 [params]
-    name = "Showfolio Theme"
-    description = "Modern portfolio theme for your Hugo site."
+  name = "Showfolio Theme"
+  description = "Modern portfolio theme for your Hugo site."
+  author = "Varun A P"
+  authorEmail = "hey@apvarun.com"
+  authorImage = "/photo.png"
 
-    github_user = "apvarun"
-    github_repo = "https://github.com/apvarun/showfolio"
-    github_banner = true
+  copyright = "Copyright © 2021 - Varun A P · All rights reserved"
 
-    favicon = "favicon.ico"
+  github_user = "apvarun"
+  github_repo = "https://github.com/apvarun/showfolio"
+  github_banner = true
+
+  favicon = "favicon.ico"
+
+[params.homepage]
+  title = "Hey 👋 I'm Varun"
+  tagline = "Frontend Expert, Performance Engg. And Indie-Maker"
+  description = "Frontend Engineer with experience in building scalable SaaS applications and websites."
+  contact = "https://twitter.com/apvarun"
+
+[params.homepage.codepen]
+  username = "apvarun"
+  pens = ["MQaRKL", "RxodrP", "BmXGdm", "wdVypQ"]
+
+[params.homepage.resume]
+  skills = ["Visual Design", "Frontend Development"]
+
+[[params.homepage.resume.work]]
+  name = "Google"
+  role = "Frontend Engineer"
+  duration = "Nov 2019 - Apr 2021"
+
+[[params.homepage.resume.work]]
+  name = "Amazon"
+  role = "Frontend Engineer"
+  duration = "Nov 2019 - Apr 2021"
+
+[[params.homepage.resume.courses]]
+  name = "HTML Certification"
+  provider = "CanCanIT"
+  duration = "Nov 2019 - Apr 2021"
+
+[params.homepage.social]
+  twitter = "https://twitter.com/apvarun"
+  linkedin = "https://linkedin.com/in/apvarun"
+  github = "https://github.com/apvarun"
 
 [build]
   writeStats = true

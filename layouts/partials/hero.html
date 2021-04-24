@@ -1,0 +1,45 @@
+<section class="p-4 flex flex-col items-center">
+  {{with .Site.Params.authorImage}}
+  <div class="w-48 h-48 rounded-full mb-6 bg-red-100">
+    <img src="{{.}}" class="w-full p-2 h-full object-contain" />
+  </div>
+  {{end}}
+
+  <h1 class="text-2xl font-bold text-center mb-4">
+    {{.Site.Params.homepage.title}}
+  </h1>
+  <div class="text-6xl font-bold text-center max-w-3xl mb-4 relative">
+    <div
+      class="absolute top-0 opacity-20 transform -rotate-12 left-1/2 -translate-x-1/2 text-red-300 z-0"
+    >
+      <svg
+        width="350"
+        height="160"
+        xmlns="http://www.w3.org/2000/svg"
+        viewbox="0 0 190 160"
+      >
+        <path
+          d="M 10 80 Q 52.5 10, 95 80 T 180 80"
+          stroke="currentColor"
+          stroke-width="5"
+          stroke-linecap="round"
+          fill="transparent"
+        />
+      </svg>
+    </div>
+    <div class="relative">{{.Site.Params.homepage.tagline}}</div>
+  </div>
+  <p class="font-light text-center max-w-sm mb-8">
+    {{.Site.Params.homepage.description}}
+  </p>
+
+  {{ with .Site.Params.homepage.contact }}
+  <a
+    href="{{ . }}"
+    rel="noopener noreferrer"
+    target="_blank"
+    class="px-6 py-2 rounded-full bg-black text-white hover:bg-gray-900"
+    >Talk to me</a
+  >
+  {{ end }}
+</section>
