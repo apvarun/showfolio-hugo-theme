@@ -1,6 +1,6 @@
 theme = "showfolio"
 languageCode = "en-us"
-baseurl = "http://example.com/"
+baseurl = "https://showfolio.vercel.app/"
 title = "Showfolio Theme"
 
 

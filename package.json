@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "start": "hugo --gc",
-    "dev": "hugo server -s exampleSite --themesDir=../.. --disableFastRender"
+    "dev": "hugo server -s exampleSite --themesDir=../.. --disableFastRender",
+    "build": "hugo -s exampleSite --themesDir=../.."
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
