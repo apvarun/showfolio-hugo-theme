@@ -46,6 +46,9 @@ title = "Showfolio Theme"
   twitter = "https://twitter.com/"
   linkedin = "https://linkedin.com/in/"
   github = "https://github.com/"
+  medium = "https://medium.com/"
+  reddit = "https://reddit.com/"
+  dribbble = "https://dribbble.com/"
 
 [build]
   writeStats = true
