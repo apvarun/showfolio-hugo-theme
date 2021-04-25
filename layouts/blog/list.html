@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article class="max-w-5xl mx-auto px-4">
+  <h1 class="text-4xl font-bold mb-4">{{ .Title }}</h1>
+  <div class="text-gray-600">{{ .Content }}</div>
+
+  <div class="card-list">
+    {{ range .Data.Pages -}}
+    <a class="block my-6" href="{{ .RelPermalink }}">
+      {{ $img := .Params.featured_image }}
+      {{ $title := .Params.title }}
+      {{ with $img }}
+      <img class="rounded max-w-full" src="{{ . }}" alt="{{ $title }}" />
+      {{ end }}
+      <h2 class="text-xl font-semibold mb-1">{{ $title }}</h2>
+      <p class="font-light mb-2 text-gray-500 text-sm">
+        {{ .Params.date.Format "January 2, 2006" }}
+      </p>
+      <p class="font-light">{{ .Summary }}</p>
+    </a>
+    {{ end -}}
+  </div>
+</article>
+{{ end }}

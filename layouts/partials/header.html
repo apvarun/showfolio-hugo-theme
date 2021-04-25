@@ -2,7 +2,7 @@
   <nav class="flex items-center justify-between flex-wrap">
     <div class="flex gap-2 items-center">
       {{ with .Site.Params.authorEmail}}
-      <a href="mailto:{{.}}">
+      <a href="mailto:{{.}}" aria-label="EMail">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
@@ -27,6 +27,11 @@
 
     <ul id="nav-menu" class="flex w-auto mt-0 space-x-2">
       {{ with .Site.GetPage "/about" }}
+      <li>
+        <a href="{{ .Permalink }}" class="hover:text-blue-800">{{ .Title }}</a>
+      </li>
+      {{ end }}
+      {{ with .Site.GetPage "/blog" }}
       <li>
         <a href="{{ .Permalink }}" class="hover:text-blue-800">{{ .Title }}</a>
       </li>
