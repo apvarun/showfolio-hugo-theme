@@ -7,22 +7,17 @@ title = "Showfolio Theme"
 [params]
   name = "Showfolio Theme"
   description = "Modern portfolio theme for your Hugo site."
-  author = "Varun A P"
-  authorEmail = "hey@apvarun.com"
+  author = "John Doe"
+  authorEmail = "name@example.com"
   authorImage = "/photo.png"
 
-  copyright = "Copyright © 2021 - Varun A P · All rights reserved"
-
-  github_user = "apvarun"
-  github_repo = "https://github.com/apvarun/showfolio"
-  github_banner = true
-
+  copyright = "Copyright © 2021 - John Doe · All rights reserved"
   favicon = "favicon.ico"
 
 [params.homepage]
-  title = "Hey 👋 I'm Varun"
-  tagline = "Frontend Expert, Performance Engg. And Indie-Maker"
-  description = "Frontend Engineer with experience in building scalable SaaS applications and websites."
+  title = "Hey 👋 I'm John Doe"
+  tagline = "UX Designer and Product Lead"
+  description = "Develop functional user interfaces and provide a valuable experience to customers."
   contact = "https://twitter.com/apvarun"
 
 [params.homepage.codepen]
@@ -30,27 +25,27 @@ title = "Showfolio Theme"
   pens = ["MQaRKL", "RxodrP", "BmXGdm", "wdVypQ"]
 
 [params.homepage.resume]
-  skills = ["Visual Design", "Frontend Development"]
+  skills = ["Visual Design", "Product Development"]
 
 [[params.homepage.resume.work]]
   name = "Google"
-  role = "Frontend Engineer"
+  role = "Product Engineer"
   duration = "Nov 2019 - Apr 2021"
 
 [[params.homepage.resume.work]]
   name = "Amazon"
-  role = "Frontend Engineer"
-  duration = "Nov 2019 - Apr 2021"
+  role = "Sr. UX Designer"
+  duration = "Jan 2016 - Oct 2019"
 
 [[params.homepage.resume.courses]]
-  name = "HTML Certification"
-  provider = "CanCanIT"
-  duration = "Nov 2019 - Apr 2021"
+  name = "Design Principles"
+  provider = "UX Academy"
+  duration = "Nov 2019 - Jan 2020"
 
 [params.homepage.social]
-  twitter = "https://twitter.com/apvarun"
-  linkedin = "https://linkedin.com/in/apvarun"
-  github = "https://github.com/apvarun"
+  twitter = "https://twitter.com/"
+  linkedin = "https://linkedin.com/in/"
+  github = "https://github.com/"
 
 [build]
   writeStats = true

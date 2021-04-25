@@ -1,4 +1,4 @@
 ---
-author: Varun A P
+author: John Doe
 title: Blog
 ---
