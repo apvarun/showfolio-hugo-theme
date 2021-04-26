@@ -1,4 +1,17 @@
+const themeDir = __dirname + "/../../";
+
 module.exports = {
+  purge: {
+    enabled: true,
+    content: [
+      themeDir + "layouts/**/*.html",
+      themeDir + "content/**/*.html",
+      "layouts/**/*.html",
+      "content/**/*.html",
+      "exampleSite/layouts/**/*.html",
+      "exampleSite/content/**/*.html",
+    ],
+  },
   darkMode: "class",
   theme: {
     extend: {
