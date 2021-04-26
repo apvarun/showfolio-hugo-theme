@@ -4,6 +4,7 @@
   <div class="relative {{ if eq (sub (mod $index  3) 1) 0 }}row-span-2{{end}} shadow-sm md:shadow-2xl">
     <img
       class="rounded object-cover w-full h-full"
+      loading="lazy"
       src="https://codepen.io/{{ $username }}/pen/{{ $val }}/image/small.png"
     />
     <div
