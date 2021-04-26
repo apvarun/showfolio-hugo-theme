@@ -8,13 +8,15 @@ ShowFolio is a modern portfolio theme for your Hugo site.
 
 ![Preview](https://github.com/apvarun/showfolio-hugo-theme/raw/main/images/showfolio-dark.png)
 
-Features:
+**Features:**
 
 - Responsive content
 - Codepen Embeds
 - Blog
 - Social links
 - Dark mode
+
+➡️ [DEMO](https://showfolio.vercel.app/)
 
 ## Get the theme
 
@@ -49,11 +51,10 @@ The following explains how to add content to your Hugo site. You can find sample
 
     .
     ├── ...
-    ├── projects       # Section Name
-    │   ├── project1   # Project 1
-    │   ├── project2   # Project 2
-    │   └── _index     # (optional) Customize section name &
-    │                  # default image for section contents
+    ├── blog       # Blog Section
+    │   ├── post1   # Post 1
+    │   ├── post2   # Post 2
+    │   └── _index     
     └── ...
 
 ## Configure your site
@@ -62,9 +63,7 @@ From `exampleSite/`, copy `config.toml` to the root folder of your Hugo site and
 
 ## Menu
 
-Menu in ShowFolio theme is auto-generated from the sections inside your content folder.
-
-You can also add a custom menu item using the `config.toml` and disable auto-generated sections if not required. Refer config in [exampleSite](https://github.com/apvarun/showfolio-hugo-theme/blob/master/exampleSite/config.toml)
+Menu in ShowFolio theme is pre-set to have blog and about pages.
 
 ## Google Analytics
 
