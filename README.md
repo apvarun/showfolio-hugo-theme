@@ -6,12 +6,15 @@
 
 ShowFolio is a modern portfolio theme for your Hugo site.
 
-![Preview](https://github.com/apvarun/showfolio-hugo-theme/blob/master/images/screenshot.png)
+![Preview](https://github.com/apvarun/showfolio-hugo-theme/raw/main/images/showfolio-dark.png)
 
 Features:
 
 - Responsive content
+- Codepen Embeds
+- Blog
 - Social links
+- Dark mode
 
 ## Get the theme
 
