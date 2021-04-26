@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   {{ partial "head.html" . }}
-  <body class="flex flex-col min-h-screen">
+  <body
+    class="flex flex-col min-h-screen dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500"
+  >
     {{- partial "header.html" . -}}
-    <main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-4 sm:mt-16">
+    <main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-8 sm:mt-16">
       {{- block "main" . }}{{- end }}
     </main>
     {{- partial "footer.html" . -}}

@@ -10,6 +10,7 @@ title = "Showfolio Theme"
   author = "John Doe"
   authorEmail = "name@example.com"
   authorImage = "/photo.png"
+  autoDarkMode = true
 
   copyright = "Copyright © 2021 - John Doe · All rights reserved"
   favicon = "favicon.ico"
@@ -18,7 +19,7 @@ title = "Showfolio Theme"
   title = "Hey 👋 I'm John Doe"
   tagline = "UX Designer and Product Lead"
   description = "Develop functional user interfaces and provide a valuable experience to customers."
-  contact = "https://twitter.com/apvarun"
+  contact = "https://twitter.com/"
 
 [params.homepage.codepen]
   username = "apvarun"
