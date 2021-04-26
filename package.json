@@ -1,6 +1,6 @@
 {
   "name": "showfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Modern portfolio theme for your Hugo site.",
   "main": "index.js",
   "repository": "https://github.com/apvarun/showfolio",
