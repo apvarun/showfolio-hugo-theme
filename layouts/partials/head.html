@@ -6,16 +6,20 @@
   </title>
   {{- if .Description }}
   <meta name="description" content="{{ .Description }}" />
-  {{ end -}} {{- if .Keywords }} <meta name="keywords" content="{{ delimit
-  .Keywords "," }}" /> {{ end -}} {{- if .Params.Author }}
+  {{ end -}}
+  {{- if .Keywords }} <meta name="keywords" content="{{ delimit
+  .Keywords "," }}" />
+  {{ end -}}
+  {{- if .Params.Author }}
   <meta name="author" content="{{ .Params.Author}}" />
-  {{ end -}} {{ hugo.Generator }}
+  {{ end -}}
+  {{ hugo.Generator }}
 
-  {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config"
-  "./assets/css/postcss.config.js") -}} {{- if .Site.IsServer }}
+  {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
+  {{- if .Site.IsServer }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-  {{ else }} {{- $styles := $styles| minify | fingerprint |
-  resources.PostProcess -}}
+  {{ else }}
+  {{- $styles := $styles| minify | fingerprint | resources.PostProcess -}}
   <link
     rel="stylesheet"
     href="{{ $styles.Permalink }}"

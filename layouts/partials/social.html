@@ -1,6 +1,6 @@
 <section class="my-4">
   <ul class="flex justify-center gap-4">
-    {{with .Site.Params.homepage.social.twitter}}
+    {{ with .Site.Params.homepage.social.twitter }}
     <li>
       <a
         href="{{.}}"
@@ -27,7 +27,8 @@
         </svg>
       </a>
     </li>
-    {{end}} {{with .Site.Params.homepage.social.linkedin}}
+    {{ end }}
+    {{ with .Site.Params.homepage.social.linkedin }}
     <li>
       <a
         href="{{.}}"
@@ -56,7 +57,8 @@
         </svg>
       </a>
     </li>
-    {{end}} {{with .Site.Params.homepage.social.github}}
+    {{ end }}
+    {{ with .Site.Params.homepage.social.github }}
     <li>
       <a
         href="{{.}}"
@@ -83,7 +85,8 @@
         </svg>
       </a>
     </li>
-    {{end}} {{with .Site.Params.homepage.social.medium}}
+    {{ end }}
+    {{ with .Site.Params.homepage.social.medium }}
     <li>
       <a
         href="{{.}}"
@@ -113,7 +116,8 @@
         </svg>
       </a>
     </li>
-    {{end}} {{with .Site.Params.homepage.social.reddit}}
+    {{ end }}
+    {{ with .Site.Params.homepage.social.reddit }}
     <li>
       <a
         href="{{.}}"
@@ -145,7 +149,8 @@
         </svg>
       </a>
     </li>
-    {{end}} {{with .Site.Params.homepage.social.dribbble}}
+    {{ end }}
+    {{ with .Site.Params.homepage.social.dribbble }}
     <li>
       <a
         href="{{.}}"
@@ -174,6 +179,6 @@
         </svg>
       </a>
     </li>
-    {{end}}
+    {{ end }}
   </ul>
 </section>

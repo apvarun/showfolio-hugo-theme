@@ -6,8 +6,9 @@
   <div class="card-list">
     {{ range .Data.Pages -}}
     <a class="block my-6" href="{{ .RelPermalink }}">
-      {{ $img := .Params.featured_image }} {{ $title := .Params.title }} {{ with
-      $img }}
+      {{ $img := .Params.featured_image }}
+      {{ $title := .Params.title }}
+      {{ with $img }}
       <img class="rounded max-w-full mb-4" src="{{ . }}" alt="{{ $title }}" />
       {{ end }}
       <h2 class="text-xl font-semibold mb-1">{{ $title }}</h2>
