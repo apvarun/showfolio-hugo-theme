@@ -34,6 +34,12 @@ Alternatively, you can include this repository as a [git submodule](https://git-
 git submodule add https://github.com/apvarun/showfolio-hugo-theme.git themes/showfolio
 ```
 
+## Setting up the theme
+
+- Install postcss-cli globally using `npm install -g postcss-cli`
+- Copy package.json to the root folder of your website and run `npm install`
+- Finally run `hugo serve`
+
 ## Preview the theme
 
 ShowFolio theme ships with an fully configured example site. For a quick preview:
